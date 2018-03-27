@@ -1,0 +1,24 @@
+.jumbotron {
+    background-color:rgb(124, 147, 209) !important;
+    color: white;
+}
+
+.card-header {
+    background-color: rgb(124, 147, 209) !important;
+}
+
+.btn {
+    background-color: rgb(124, 147, 209) !important;
+}
+
+.btn:hover {
+    background-color: rgb(52, 74, 136) !important;
+}
+
+.nav-pills > li > a.active {
+    background-color: rgb(124, 147, 209) !important;
+}
+
+.nav-pills > li > a.active:hover {
+    background-color: rgb(52, 74, 136) !important;
+}
