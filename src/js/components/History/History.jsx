@@ -1,13 +1,22 @@
 import React, { Component } from "react";
 
+
+
+
 export default class History extends Component {
   constructor(props) {
     super(props);
 
   }
-  render() {
-    return (
 
+
+
+
+  render() {
+    const { searchItems, searchTime } = this.props;
+
+
+    return (
 
         <div className="card">
           <div className="card-header text-white bg-primary">
@@ -15,18 +24,23 @@ export default class History extends Component {
           </div>
           <div className="card-body">
             <div className="list-group">
-              <div className="list-group-item">
+            {searchItems.map((searchItem, i) => (
+              <div className="list-group-item"
+                   key={i}>
                 <div className="row">
                   <div className="col-md-6">
-                    San Diego
+                    { searchItem }
                   </div>
                   <div className="col-md-6">
-                    <span className="float-right">time, date</span>
+                    <span className="float-right">
+                      { searchTime[i] }
+                    </span>
                   </div>
                 </div>
               </div>
-            </div>
+          ))}
           </div>
+        </div>
         </div>
     )
   }

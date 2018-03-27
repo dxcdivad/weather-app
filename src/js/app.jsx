@@ -3,6 +3,7 @@ import Input from "./components/Input";
 import Results from "./components/Results";
 import History from "./components/History";
 
+
 export default class App extends React.Component {
   render() {
     return (
