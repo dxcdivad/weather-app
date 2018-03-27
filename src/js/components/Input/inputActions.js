@@ -27,7 +27,7 @@ export function getWeather(city) {
 export function getTime() {
   const time = new Date().toLocaleTimeString();
   const date = new Date().toLocaleDateString();
-  const searchTime = time + ' ' + date;
+  const searchTime = date + ' ' + time;
   
 
   return {
